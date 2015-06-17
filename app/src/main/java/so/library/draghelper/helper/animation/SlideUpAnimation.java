@@ -12,10 +12,10 @@ public class SlideUpAnimation extends Animation {
 
     View view;
 
-    public SlideUpAnimation(View view){
+    public SlideUpAnimation(View view, float startTranslationY){
         this.view = view;
 
-        this.startTranslationY = view.getTranslationY();
+        this.startTranslationY = startTranslationY;
     }
 
     @Override

@@ -7,16 +7,16 @@ import android.view.animation.Transformation;
 /**
  * Created by risedrag on 15. 1. 16..
  */
-public class HeaderViewMinimizeAnimation extends Animation {
-	final int startWidth;
-	final int targetWidth;
+public class HeaderViewScaleDownAnimation extends Animation {
+	final float startWidth;
+	final float targetWidth;
 	final float targetTranslationX;
 	final float targetTranslationY;
 
 	View view;
 
 
-	public HeaderViewMinimizeAnimation(View view, int targetWidth, float targetTranslationX, float targetTranslationY) {
+	public HeaderViewScaleDownAnimation(View view, float targetWidth, float targetTranslationX, float targetTranslationY) {
 		this.view = view;
 		this.targetWidth = targetWidth;
 		this.targetTranslationX = targetTranslationX;

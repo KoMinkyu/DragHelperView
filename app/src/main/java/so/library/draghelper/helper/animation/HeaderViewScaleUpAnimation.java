@@ -7,16 +7,16 @@ import android.view.animation.Transformation;
 /**
  * Created by risedrag on 15. 1. 19..
  */
-public class HeaderViewMaximizeAnimation extends Animation {
-	final int startWidth;
-	final int targetWidth;
+public class HeaderViewScaleUpAnimation extends Animation {
+	final float startWidth;
+	final float targetWidth;
 
 	final float startTranslationX;
 	final float startTranslationY;
 
 	View view;
 
-	public HeaderViewMaximizeAnimation(View view, int targetWidth) {
+	public HeaderViewScaleUpAnimation(View view, float targetWidth) {
 		this.view = view;
 		this.targetWidth = targetWidth;
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<so.library.draghelper.helper.view.PopupPanel
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_popup_drag_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <so.library.draghelper.youtube.CustomWebView
+        android:id="@+id/test_popup_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/test_popup_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+      <Button
+        android:id="@+id/btn_play_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="영상 재생"/>
+    </LinearLayout>
+
+</so.library.draghelper.helper.view.PopupPanel>
